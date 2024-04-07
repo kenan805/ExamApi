@@ -12,10 +12,6 @@ using System.Threading.Tasks;
 namespace Exam.Persistence.Contexts;
 public class ExamDbContext : DbContext
 {
-    public ExamDbContext()
-    {
-        
-    }
     public ExamDbContext(DbContextOptions<ExamDbContext> options) : base(options)
     { }
 
