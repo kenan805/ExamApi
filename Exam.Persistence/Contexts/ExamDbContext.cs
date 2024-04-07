@@ -26,11 +26,6 @@ public class ExamDbContext : DbContext
         base.OnModelCreating(modelBuilder);
     }
 
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
-    }
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         var entries = ChangeTracker.Entries().ToList();
